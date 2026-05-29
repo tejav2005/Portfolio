@@ -37,7 +37,7 @@ const data = {
   publications: [{ title: "Interactive Recipe Recommendation Using AI and ML", venue: "ISTE National Conference (RMKRASEFT-25)" }],
 };
 
-const stats = [["4+","Projects"],["2nd","Hackathon"],["1","Publication"],["100%","10th Grade"]];
+const stats = [["4+","Projects"],["2nd","Hackathon"],["1","Publication"],["83.33%","12th Grade"]];
 
 function useTypewriter(text, speed = 45, start = true) {
   const [display, setDisplay] = useState("");
@@ -318,7 +318,7 @@ export default function Portfolio() {
               </div>
               <div>
                 <div style={{ background:"#080d1a", border:"1px solid #1a2240", padding:"32px" }}>
-                  <div style={{ fontFamily:"'DM Mono',monospace", fontSize:10, letterSpacing:3, color:"#4ecdc4", marginBottom:24, textTransform:"uppercase" }}>// info.json</div>
+                  <div style={{ fontFamily:"'DM Mono',monospace", fontSize:10, letterSpacing:3, color:"#4ecdc4", marginBottom:24, textTransform:"uppercase" }}>// info</div>
                   {[
                     ["name",     data.name],
                     ["role",     "Software Engineer"],
@@ -330,9 +330,9 @@ export default function Portfolio() {
                     ["status",   "Open to opportunities"],
                   ].map(([k,v]) => (
                     <div key={k} style={{ display:"flex", gap:12, padding:"10px 0", borderBottom:"1px solid #1a2240", fontFamily:"'DM Mono',monospace", fontSize:12.5 }}>
-                      <span style={{ color:"#ff6b6b", minWidth:80 }}>"{k}"</span>
+                      <span style={{ color:"#ff6b6b", minWidth:80 }}>{k}</span>
                       <span style={{ color:"#5a6478" }}>:</span>
-                      <span style={{ color:"#a8e063", flex:1, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>"{v}"</span>
+                      <span style={{ color:"#a8e063", flex:1, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{v}</span>
                     </div>
                   ))}
                 </div>
@@ -481,7 +481,7 @@ export default function Portfolio() {
             </div>
           </RevealSection>
           <RevealSection delay={0.15}>
-            <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))", gap:1, background:"#1a2240", maxWidth:900, margin:"0 auto" }}>
+            <div style={{ display:"grid", gridTemplateColumns:"repeat(2,1fr)", gap:1, background:"#1a2240", maxWidth:900, margin:"0 auto" }}>
               {[
                 { label:"Email",    value:data.email,    href:`mailto:${data.email}`, icon:"✉" },
                 { label:"Phone",    value:data.phone,    href:`tel:${data.phone}`,    icon:"◉" },
